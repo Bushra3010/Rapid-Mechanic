@@ -1,0 +1,9 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Rapid Mechanic</title>
+<script>
+  // GitHub Pages has no SPA routing: send deep links back to the right app.
+  var base = '/Rapid-Mechanic/';
+  var p = location.pathname;
+  if (p.indexOf(base + 'app') === 0) location.replace(base + 'app/');
+  else location.replace(base + '?r=' + encodeURIComponent(p.slice(base.length) + location.search + location.hash));
+</script></head><body></body></html>

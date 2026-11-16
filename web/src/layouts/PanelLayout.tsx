@@ -50,7 +50,7 @@ export default function PanelLayout({ role }: { role: Session['role'] }) {
   const sidebar = (
     <div className="flex h-full flex-col bg-navy-800 text-navy-100">
       <div className="flex items-center gap-2.5 px-5 py-5">
-        <img src="/logo.png" alt="" className="h-9 w-9 rounded-lg bg-white p-0.5" />
+        <img src={`${import.meta.env.BASE_URL}logo.png`} alt="" className="h-9 w-9 rounded-lg bg-white p-0.5" />
         <div>
           <p className="text-sm font-semibold text-white">Rapid Mechanic</p>
           <p className="text-[11px] uppercase tracking-wider text-brand-400">{TITLE[role]}</p>
@@ -89,7 +89,7 @@ export default function PanelLayout({ role }: { role: Session['role'] }) {
       <div className="min-w-0 flex-1">
         <header className="sticky top-0 z-30 flex items-center gap-3 border-b border-slate-200 bg-white/90 px-4 py-3 backdrop-blur lg:hidden">
           <button onClick={() => setOpen(!open)} aria-label="Menu">{open ? <X /> : <Menu />}</button>
-          <img src="/logo.png" alt="" className="h-7 w-7" />
+          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="" className="h-7 w-7" />
           <span className="font-semibold text-navy-800">{TITLE[role]}</span>
         </header>
         <main className="mx-auto max-w-7xl p-4 sm:p-6 lg:p-8"><Outlet /></main>

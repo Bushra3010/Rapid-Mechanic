@@ -32,7 +32,7 @@ export default function Login() {
       <div className="relative hidden flex-col justify-between overflow-hidden bg-navy-800 p-12 text-white lg:flex">
         <div className="absolute -right-24 -top-24 h-96 w-96 rounded-full bg-brand-500/20 blur-3xl" />
         <div className="flex items-center gap-3">
-          <img src="/logo.png" alt="" className="h-12 w-12 rounded-xl bg-white p-1" />
+          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="" className="h-12 w-12 rounded-xl bg-white p-1" />
           <span className="text-xl font-semibold">Rapid Mechanic</span>
         </div>
         <div className="relative">
@@ -44,7 +44,7 @@ export default function Login() {
 
       <div className="flex items-center justify-center p-6">
         <form onSubmit={submit} className="w-full max-w-md">
-          <img src="/logo.png" alt="Rapid Mechanic" className="mb-6 h-14 w-14 lg:hidden" />
+          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Rapid Mechanic" className="mb-6 h-14 w-14 lg:hidden" />
           <h2 className="text-2xl font-semibold text-navy-800">Sign in</h2>
           <p className="mb-6 mt-1 text-sm text-slate-500">Choose your panel to continue.</p>
 
