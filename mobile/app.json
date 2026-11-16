@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "Rapid Mechanic",
+    "slug": "rapid-mechanic",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo.png",
+    "scheme": "rapidmechanic",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.rapidmechanic.customer",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Rapid Mechanic uses your location to send a technician or roadside help to the right place."
+      }
+    },
+    "android": {
+      "package": "com.rapidmechanic.customer",
+      "adaptiveIcon": {
+        "backgroundColor": "#FFFFFF",
+        "foregroundImage": "./assets/logo.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "single",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#FFFFFF",
+          "image": "./assets/logo.png",
+          "imageWidth": 200
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Rapid Mechanic uses your location to send a technician or roadside help to the right place."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": false,
+      "reactCompiler": true
+    }
+  }
+}
