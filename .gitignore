@@ -1,0 +1,11 @@
+node_modules/
+dist/
+web-build/
+.expo/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+# client quotation kept out of the public repo
+NEXTB_Vehicle_Services_and_Marketplace_Quotation.pdf
